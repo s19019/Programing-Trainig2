@@ -1,0 +1,14 @@
+text = "Hi He Lied Because Boron Could Not Oxidize Fluorine.New Nations Might Also Sign Peace Security Clause. ArthurKing Can."
+words = text.split(" ")
+first_only = [1, 5, 6, 7, 9, 15, 16, 19]
+number = 1
+element = {}
+
+for word in words:
+    if number in first_only:
+        element[word[0]] = number
+    else:
+        element[word[0] + word[1]] = number
+    number += 1
+    
+print(element)
